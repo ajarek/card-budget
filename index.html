@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Card budget</title>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <div class="back"><i class="fas fa-arrow-left"></i></div>
+            <div class="h1">
+                <h1>MY CARDS</h1>
+            </div>
+            <div class="seting"><i class="fas fa-cog"></i></div>
+        </div>
+        <div class="budget">My budget <span>0</span>$</div>
+
+        <div class="card">
+            <img src="card.png" alt="">
+            <div class="cardBudget">
+                <input type="number" value="0">
+                <button class="btn">add budget</button>
+            </div>
+            <div class="cardOperation">
+                <form action="">
+                    <div><input type="radio" name="radio" id="income">
+                        <label for="income">Income</label>
+                        <input type="radio" name="radio" id="expense" checked>
+                        <label for="expence">Expence</label></div>
+                    <input type="datetime-local" name="" id="date" required value="2021-06-21T22:15">
+                    <input type="number" name="" id="number" value="0" min="0" required
+                        onkeydown="javascript: return event.keyCode == 69||event.keyCode==109||event.keyCode==107||event.keyCode==110||event.keyCode==190||event.keyCode==189||event.keyCode==187||event.keyCode==188 ? false : true">
+                    <button id="add" type="button">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="h3">
+            <h3>TRANSACTION HISTORY</h3>
+        </div>
+        <div class="wrap">
+        </div>
+        <footer>
+            <i class="fas fa-home"></i>
+            <span><i class="fas fa-plus-circle"></i></span>
+            <i class="fas fa-user"></i>
+
+        </footer>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
